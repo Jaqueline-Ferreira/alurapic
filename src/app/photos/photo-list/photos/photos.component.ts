@@ -9,7 +9,8 @@ import { Photo } from '../../photo/photo';
 export class PhotosComponent implements OnChanges {
 
   @Input() photos: Photo[] = [];
-  rows = [];
+  rows: any[] = [];
+  
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
